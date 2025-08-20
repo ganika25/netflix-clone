@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.backgroundContainer {
+  background-image: url('bg image.jpg');
+  height: 100vh;
+  filter: blur(16px);
+  position: relative;
+}
+
+.pinkoverlay {
+  background-color: rgba(57, 2, 34, 0.932);
+  height: 100%;
+  width: 100%;
+}
+
+.contentContainer {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 2rem;
+  width: 100%;
+}
+
+nav {
+  /* border: 2px solid green; */
+  height: 20vh;
+}
+
+.upperNavContainer {
+  /* border: 2px solid blue; */
+  display: flex;
+  height: 50%;
+}
+
+.upperNavLeftContainer {
+  /* border: 2px solid red; */  
+  width: 50%;
+}
+
+.netflixlogo {
+  width: 30%;
+  margin-top: 1rem;
+}
+
+.upperNavRightContainer {
+  width: 50%;
+  padding-right: 2px;
+}
+
+.navButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.languageButton {
+  display: flex;
+  padding: .35rem .8rem;
+  border-radius: 50px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.languageButton p {
+  margin-left: 5px;
+}
+
+.signinButton {
+  background-color: #fff;
+  padding: .4rem .8rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  outline: none;
+  margin-left: 10px;
+}
+
+.lowerNavContainer {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menulist {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.5);
+  height: 7vh;
+}
+
+.menulistItems{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bannerContainer {
+  height: 90vh;
+  background-image: url('bg image');
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.7), black);
+  border-radius: 20px;
+}
+
+.bannerContains {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.bannerContains h1 {
+  font-size: 4rem;
+  width: 50%;
+  text-align: center;
+}
+
+.bannerContains h4{
+    font-size: 1.5rem;
+    margin: 20px;
+}
+.bannerContains p{
+    font-size: 1rem;
+    margin: 20px;
+}
+
+.inputContainer {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.inputEmailBox {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: 1px solid white;
+  background-color: rgba(255,255,255,.3);
+  color: white;
+  width: 60%;
+  outline: none;
+  font-size: 1rem;
+}
+
+.inputEmailBox::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.getstartedBox {
+  width: 30%;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: none;
+}
+
+.carousalContainer, .planSection {
+  width: 80%;
+  margin: 3rem auto;
+  color: white;
+}
+.carousalContainer h2, .planSection h2{
+    margin-left: 5rem;
+    font-size: 2.5rem;
+}
+
+.carousalcardinsider {
+   /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;  
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.carousalCard {
+  width: 15%;
+  height: 40vh;
+  position: relative;
+  border-radius: 10px;
+}
+
+.carousalnumbers {
+  position: absolute;
+  left: -20px;
+}
+
+.carousalnumbers span {
+  font-size: 4rem;
+  color: rgba(0,0,0,0.8);
+  -webkit-text-stroke: 0.25rem rgb(255, 255, 255);
+  text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+.carousalimages{
+    width: 100%;
+    height: 90%;
+}
+.carousalimages img {
+  width: 100%;
+  height: 100%;
+}
+
+.planContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.plancard {
+  width: 23%;
+  height: 38vh;
+  padding: 1rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  border: 2px solid rgba(255,255,255,0.2);
+}
+
+.plancard h2{
+    margin-left: 0;
+    font-size: 1.5rem;
+}
+.plancard h4{
+    font-size: 1.3rem;
+}
+.plancard p{
+    font-size: 1rem;
+    /* font-weight: 500; */
+}
+
+
+.reasonToJoin {
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.reasonToJoin h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.reasonToJoin ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0;
+}
+
+.reasonToJoin li {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 22%;
+  min-width: 200px;
+  color: white;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
+
+.faqContainer {
+  margin: 4rem auto;
+  width: 90%;
+}
+
+.faqContainer h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.faqContainer details {
+  margin: 1rem 0;
+  background-color: #1c1c1c;
+  padding: 1.2rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.faqContainer details:hover {
+  background-color: #2a2a2a;
+}
+
+.faqContainer summary {
+  font-size: 1.2rem;
+  font-weight: 600;
+  outline: none;
+}
+
+.getStartedContainer {
+  text-align: center;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  width: 80%;
+}
+
+.getStartedContainer h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.getStartedContainer p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer {
+  text-align: center;
+  background-color: #111;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: lightgray;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: white;
+}
